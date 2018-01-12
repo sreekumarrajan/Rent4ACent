@@ -1,5 +1,5 @@
 import {IRentalSite} from '../models/rental-site.model';
-import {Action} from 'ngrx/@ngrx/store';
+import {Action} from '@ngrx/store';
 
 export const RentalSiteActionTypes = {
   'RENTAL_SITE_LOADED': 'RENTAL_SITE_LOADED'

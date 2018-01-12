@@ -1,5 +1,5 @@
 import {RentalSiteReducer} from './core/store/reducers';
-import {combineReducers} from 'ngrx/@ngrx/store';
+import {combineReducers} from '@ngrx/store';
 
 const reducers = {
   rentalSiteReducer: RentalSiteReducer
