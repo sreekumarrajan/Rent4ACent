@@ -1,13 +1,13 @@
-import {IRentalSite} from '../models/rental-site.model';
 import {Action} from '@ngrx/store';
+import {IRentalSite} from '../model/rental-site.model';
 
 export const RentalSiteActionTypes = {
   'RENTAL_SITE_LOADED': 'RENTAL_SITE_LOADED'
 };
 
 export class RentalSiteLoadedAction implements Action {
-  type = RentalSiteActionTypes.RENTAL_SITE_LOADED;
+  readonly type = RentalSiteActionTypes.RENTAL_SITE_LOADED;
   constructor (public payload: IRentalSite) { }
 }
 
-export type RentalSiteActions = RentalSiteLoadedAction;
+export type Actions = RentalSiteLoadedAction;

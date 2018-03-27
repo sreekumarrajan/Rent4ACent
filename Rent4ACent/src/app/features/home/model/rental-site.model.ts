@@ -7,6 +7,3 @@ export interface IRentalSite {
   address: IAddress;
 }
 
-export interface IRentalSiteState  {
-  [id: string]: IRentalSite;
-};
