@@ -6,16 +6,18 @@ export interface State {
 }
 
 export const initialState: State = {
-  rentalSite: null
+  rentalSite: new Array<IRentalSite>()
 };
 
 export function reducer(state = initialState, action: home.Actions): State {
   switch (action.type) {
     case home.RentalSiteActionTypes.RENTAL_SITE_LOADED:
-      const newObject = {};
-      newObject[action.payload.id] = action.payload;
-      return Object.assign({}, state, newObject);
+      const newState = Object.assign({}, state);
+      newState.rentalSite.push(action.payload);
+      return newState;
     default:
       return Object.assign({}, state);
   }
 }
+
+export const getRentalSites = (state: State) => state.rentalSite ;
