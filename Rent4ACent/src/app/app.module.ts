@@ -8,20 +8,23 @@ import { HeaderComponent } from './components/header/header.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material/material.module';
 import {StoreModule} from '@ngrx/store';
+import { FooterComponent } from './components/footer/footer.component';
+import {HomeModule} from './features/home/home.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     StoreModule.forRoot(reducers, {metaReducers}),
     appRoutes,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
