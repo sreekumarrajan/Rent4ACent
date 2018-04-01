@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {reducers, metaReducers} from './reducers';
-import { HomeComponent } from './features/home/containers/home.component';
 import {appRoutes} from './app.routes';
 import { HeaderComponent } from './components/header/header.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
