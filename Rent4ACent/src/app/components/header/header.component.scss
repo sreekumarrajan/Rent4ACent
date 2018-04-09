@@ -1,0 +1,28 @@
+@import '~styles/variables';
+.rental-app-navigation {
+
+ background: $menuBackgroundColor;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li
+  {
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+
+    &:hover
+    {
+      color: lighten($menuBackgroundColor, 50%);
+      cursor: pointer;
+    }
+  }
+}

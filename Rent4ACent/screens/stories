@@ -1,0 +1,11 @@
+Header
+
+Should contain 4 tabs and a text
+
+From left to Right:
+
+1. Rent4ACent text with symbol
+2. Tab to switch city - currently should have Toronto and Vancouver
+3. Neighborhoods - Should have the breakdown of neighbourhoods in both the cities . Details in the neighborhood story.
+4. More tab - should have options like About Us and links about Condos (more details in more tab story)
+5. Login/Logout (more details in login user story)
