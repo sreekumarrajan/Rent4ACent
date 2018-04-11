@@ -9,6 +9,10 @@ import {MaterialModule} from './material/material.module';
 import {StoreModule} from '@ngrx/store';
 import { FooterComponent } from './components/footer/footer.component';
 import {HomeModule} from './features/home/home.module';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {CoreModule} from './core/core.module';
 
 
 @NgModule({
@@ -23,9 +27,22 @@ import {HomeModule} from './features/home/home.module';
     appRoutes,
     BrowserAnimationsModule,
     MaterialModule,
-    HomeModule
+    HomeModule,
+    CoreModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

@@ -1,0 +1,10 @@
+{
+  "en": {
+    "HEADER": {
+      "LINK1": "Menu1",
+      "LINK2": "Menu2",
+      "LINK3": "Menu3"
+    },
+    "GREETINGS": "Hello"
+  }
+}
