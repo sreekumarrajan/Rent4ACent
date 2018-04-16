@@ -1,10 +1,13 @@
 <nav class="rental-app-navigation">
   <ul>
     <li>
-      {{'HEADER.LINK1' | translate}}
+      <mat-icon routerLink="/home">home</mat-icon>
     </li>
     <li>
-      {{'HEADER.LINK2' | translate}}
+      <button mat-button [matMenuTriggerFor]="cityMenu">{{ selectedCity }}</button>
+      <mat-menu #cityMenu="matMenu">
+        <button mat-menu-item *ngFor="let city of selectedCities">{{city}}</button>
+      </mat-menu>
     </li>
     <li>
       {{'HEADER.LINK3' | translate}}
