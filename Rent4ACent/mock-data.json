@@ -6,5 +6,6 @@
       "LINK3": "Menu3"
     },
     "GREETINGS": "Hello"
-  }
+  },
+  "cities": [ "Vancouver", "Toronto"]
 }
