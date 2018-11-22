@@ -7,5 +7,63 @@
     },
     "GREETINGS": "Hello"
   },
-  "cities": [ "Vancouver", "Toronto"]
-}
+  "cities": [ "Vancouver", "Toronto"],
+  "sites": [{
+    "id": "Vancouver",
+    "items": [
+      {
+        "monthlyRent": "1500",
+        "size": "820",
+        "address": {
+          "addressLine1": "5900 Yonge Street",
+          "addressLine2?": "Apt 118",
+          "city": "North York",
+          "province": "Ontario",
+          "postalCode": "M2M3T8",
+          "country": "Canada"
+        }
+      },
+      {
+        "monthlyRent": "2500",
+        "size": "1020",
+        "address": {
+          "addressLine1": "5800 Yonge Street",
+          "addressLine2?": "Apt 118",
+          "city": "North York",
+          "province": "Ontario",
+          "postalCode": "M2M3T8",
+          "country": "Canada"
+        }
+      }]
+  },
+    {
+      "id": "Toronto",
+      "items": [
+        {
+          "monthlyRent": "3500",
+          "size": "820",
+          "address": {
+            "addressLine1": "47 Yonge Street",
+            "addressLine2?": "Apt 118",
+            "city": "North York",
+            "province": "Ontario",
+            "postalCode": "M2M3T8",
+            "country": "Canada"
+          }
+        },
+        {
+          "monthlyRent": "4500",
+          "size": "1020",
+          "address": {
+            "addressLine1": "34 Yonge Street",
+            "addressLine2?": "Apt 118",
+            "city": "North York",
+            "province": "Ontario",
+            "postalCode": "M2M3T8",
+            "country": "Canada"
+          }
+        }]
+    }
+
+  ]
+  }

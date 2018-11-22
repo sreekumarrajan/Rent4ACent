@@ -14,6 +14,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {CoreModule} from './core/core.module';
 import {HeaderService} from './components/header/header.service';
+import {EffectsModule} from '@ngrx/effects';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import {HeaderService} from './components/header/header.service';
   imports: [
     BrowserModule,
     StoreModule.forRoot(reducers, {metaReducers}),
+    EffectsModule.forRoot([]),
     appRoutes,
     BrowserAnimationsModule,
     MaterialModule,

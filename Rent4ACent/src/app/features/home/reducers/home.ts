@@ -13,7 +13,7 @@ export function reducer(state = initialState, action: home.Actions): State {
   switch (action.type) {
     case home.RentalSiteActionTypes.RENTAL_SITE_LOADED:
       const newState = Object.assign({}, state);
-      newState.rentalSite.push(action.payload);
+      newState.rentalSite = action.payload;
       return newState;
     default:
       return Object.assign({}, state);
